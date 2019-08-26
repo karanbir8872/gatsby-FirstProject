@@ -5,6 +5,7 @@ import Background from "../components/background"
 import Input from"../components/input"
 import Cardcontent from "../components/cardcontent"
 import Slider from "../components/slider"
+import Picture from "../components/picture"
 
 const Index = () => (
   <div>
@@ -14,6 +15,7 @@ const Index = () => (
     <Input/>
     <Cardcontent/>
     <Slider/>
+    <Picture/>
   </div>
 );
 export default Index;
