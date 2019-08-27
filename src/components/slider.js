@@ -1,7 +1,10 @@
 import React, { Component } from "react";
 import Slider from "react-slick";
 import styled from "styled-components"
+import Slidercard from "./slidercard"
+
 const Stled=styled.div`
+background: #f8f9fa !important;
 .color{
   font-size: 16px;
   color: #2e9e5b;
@@ -14,44 +17,53 @@ const Stled=styled.div`
   font-weight:500;
     margin-bottom: 2rem;
 }
+.word{
+  color: #999999;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: "Rubik", Arial, sans-serif;
+    margin-bottom: 3rem;
+}
 `;
 
-export default class SimpleSlider extends Component {
+export default class MultipleItems extends Component {
   render() {
     const settings = {
       dots: true,
       infinite: true,
       speed: 500,
-      slidesToShow: 1,
-      slidesToScroll: 1,
+      slidesToShow: 4,
+      slidesToScroll: 4,
     };
     return (
       <Stled>
-      <div>
+        <section class="section">
+    <div class="container">
         <p className="has-text-centered color">ACCOMPLISHMENTS</p>
         <p className="has-text-centered our">Our Projects</p>
-        <p className="has-text-centered">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia</p>
+        <p className="has-text-centered word">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia</p>
         <Slider {...settings}>
           <div>
-            <img src="https://colorlib.com/preview/theme/square/images/project-1.jpg"/>
+            <Slidercard img="https://colorlib.com/preview/theme/square/images/project-1.jpg" title="Office Interior Design" subtitle="Interior Design"/>
           </div>
           <div>
-          <img src="https://colorlib.com/preview/theme/square/images/project-2.jpg"/>
+          <Slidercard img="https://colorlib.com/preview/theme/square/images/project-2.jpg" title="Office Interior Design" subtitle="Interior Design"/>
           </div>
           <div>
-          <img src="https://colorlib.com/preview/theme/square/images/project-3.jpg"/>
+          <Slidercard img="https://colorlib.com/preview/theme/square/images/project-3.jpg" title="Office Interior Design" subtitle="Interior Design"/>
           </div>
           <div>
-          <img src="https://colorlib.com/preview/theme/square/images/project-4.jpg"/>
+          <Slidercard img="https://colorlib.com/preview/theme/square/images/project-4.jpg" title="Office Interior Design" subtitle="Interior Design"/>
           </div>
           <div>
-          <img src="https://colorlib.com/preview/theme/square/images/project-5.jpg"/>
+          <Slidercard img="https://colorlib.com/preview/theme/square/images/project-5.jpg" title="Office Interior Design" subtitle="Interior Design"/>
           </div>
           <div>
-          <img src="https://colorlib.com/preview/theme/square/images/project-6.jpg"/>
+          <Slidercard img="https://colorlib.com/preview/theme/square/images/project-6.jpg" title="Office Interior Design" subtitle="Interior Design"/>
           </div>
         </Slider>
-      </div>
+        </div>
+      </section>
       </Stled>
     );
   }
