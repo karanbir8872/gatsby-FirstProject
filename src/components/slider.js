@@ -37,8 +37,7 @@ export default class MultipleItems extends Component {
     };
     return (
       <Stled>
-        <section class="section">
-    <div class="container">
+          <section class="section ">
         <p className="has-text-centered color">ACCOMPLISHMENTS</p>
         <p className="has-text-centered our">Our Projects</p>
         <p className="has-text-centered word">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia</p>
@@ -62,8 +61,7 @@ export default class MultipleItems extends Component {
           <Slidercard img="https://colorlib.com/preview/theme/square/images/project-6.jpg" title="Office Interior Design" subtitle="Interior Design"/>
           </div>
         </Slider>
-        </div>
-      </section>
+        </section>
       </Stled>
     );
   }

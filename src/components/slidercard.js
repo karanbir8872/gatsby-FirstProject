@@ -10,15 +10,18 @@ padding:1rem;
     font-weight: 500;
 }
 .bit{
-    color: #999999;
-    font-size: 24px;
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: rgba(0,0,0,0.2);
 }
 `;
 const slidercard =(props)=>(
 <Center>
 <img src={props.img}/>
-<p className="has-text-centered tie">{props.title}</p>
-<p className="has-text-centered bit">{props.subtitle}</p>
+<p className="has-text-left tie">{props.title}</p>
+<p className="has-text-left bit">{props.subtitle}</p>
 </Center>
 );
 export default slidercard;
