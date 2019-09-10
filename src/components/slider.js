@@ -34,6 +34,9 @@ export default class MultipleItems extends Component {
       speed: 500,
       slidesToShow: 4,
       slidesToScroll: 4,
+      autoplay: true,
+      speed: 2000,
+      autoplaySpeed: 2000,
     };
     return (
       <Stled>
