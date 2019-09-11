@@ -1,33 +1,32 @@
-import React from "react"
-import styled from "styled-components"
-const Img=styled.div`
-.container {
+import React from 'react';
+import styled from 'styled-components';
+const Img = styled.div`
+  .container {
     position: relative;
-    width: 90%;
+    width: 100%;
   }
-  
+
+  .image {
+    width: 100%;
+  }
+
   .overlay {
     position: absolute;
+    top: 0;
     bottom: 0;
     left: 0;
     right: 0;
-    background-color: #008CBA;
-    overflow: hidden;
-    width: 100%;
     height: 100%;
-    -webkit-transform: scale(0);
-    -ms-transform: scale(0);
-    transform: scale(0);
-    -webkit-transition: .3s ease;
-    transition: .3s ease;
+    width: 100%;
+    opacity: 0;
+    transition: 0.5s ease;
+    background-color: #008cba;
   }
-  
+
   .container:hover .overlay {
-    -webkit-transform: scale(1);
-    -ms-transform: scale(1);
-    transform: scale(1);
+    opacity: 1;
   }
-  
+
   .text {
     color: white;
     font-size: 20px;
@@ -39,17 +38,15 @@ const Img=styled.div`
     transform: translate(-50%, -50%);
     text-align: center;
   }
-
 `;
-const image=(props)=>(
-    <Img>
+const image = props => (
+  <Img>
     <div class="container">
-  <img src={props.img} alt="Avatar" class="image"/>
-  <div class="overlay">
-    <div class="text">Hello World</div>
-  </div>
-</div>
-    </Img>
-
+      <img src={props.img} alt="Avatar" class="image" />
+      <div class="overlay">
+        <div class="text">Hello World</div>
+      </div>
+    </div>
+  </Img>
 );
 export default image;
