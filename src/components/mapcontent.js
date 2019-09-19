@@ -8,7 +8,7 @@ const Map = styled.div`
     font-size: 18px;
     font-weight: 400;
     margin-bottom: 0rem;
-    font-family: 'Rubik', Arial, sans-serif;
+    font-family: 'Rubik', Arial;
   }
   .colo {
     font-size: 34px;
