@@ -111,7 +111,7 @@ class header extends React.Component {
                   <span className="icon">
                     <i className="fas fa-play"></i>
                   </span>
-                  <span>WATCH VEDIO</span>
+                  <span>WATCHED VEDIO</span>
                 </a>
                 <p className=" is-size-1 has-text-left has-text-white tim">
                   We have a passion in creating new and unique spaces
