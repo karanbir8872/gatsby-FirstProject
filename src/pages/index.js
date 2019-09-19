@@ -1,16 +1,16 @@
 import React from 'react';
 import Header from '../components/Header';
-import Content from '../components/content';
-import Background from '../components/background';
-import Input from '../components/input';
-import Cardcontent from '../components/cardcontent';
-import Slider from '../components/slider';
-import Architect from '../components/architect';
-import Imageprops from '../components/imageprops';
-import Stores from '../components/stores';
-import Roomprops from '../components/roomprops';
-import Mapcontent from '../components/mapcontent';
-import Footer from '../components/footer';
+import Content from '../components/Content';
+import Background from '../components/Background';
+import Input from '../components/Input';
+import CardContent from '../components/CardContent';
+import Slider from '../components/Slider';
+import Architect from '../components/Architect';
+import ImageProps from '../components/ImageProps';
+import Stores from '../components/Stores';
+import RoomProps from '../components/RoomProps';
+import MapContent from '../components/MapContent';
+import Footer from '../components/Footer';
 
 const Index = () => (
   <div>
@@ -18,13 +18,13 @@ const Index = () => (
     <Content />
     <Background />
     <Input />
-    <Cardcontent />
+    <CardContent />
     <Slider />
     <Architect />
-    <Imageprops />
+    <ImageProps />
     <Stores />
-    <Roomprops />
-    <Mapcontent />
+    <RoomProps />
+    <MapContent />
     <Footer />
   </div>
 );

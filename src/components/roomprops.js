@@ -1,5 +1,5 @@
 import React from 'react';
-import Room from '../components/room';
+import Room from '../components/Room';
 import styled from 'styled-components';
 const Photo = styled.div`
   background: #fafafa;
